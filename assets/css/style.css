@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #00D4FF ;
-    --secondary-color: #6f7889;
-    --background-color: #0f1724;
-    --gradiente: -webkit-linear-gradient(0deg, rgba(143,92,224,1) 0%, rgba(75,153,215,1) 53%, rgba(0,212,255,1) 100%);
+    --primary-color: #00b3ff;
+    --secondary-color: #a4acbb;
+    --background-gradiente: linear-gradient(90deg, rgba(15,23,36,1) 0%, rgba(0,29,52,1) 53%, rgba(0,27,52,1) 100%);;
+    --gradiente: -webkit-linear-gradient(0deg, rgba(143, 92, 224, 1) 0%, rgba(75, 153, 215, 1) 53%, rgba(0, 212, 255, 1) 100%);
 
     --font-primary: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: var(--background-color);
+    background: var(--background-gradiente);
     font-family: var(--font-primary);
 }
 
@@ -17,7 +17,7 @@ ul li a:hover {
     color: var(--primary-color) !important;
 }
 
-.boton-nav{
+.boton-nav {
     color: var(--primary-color)
 }
 
@@ -38,19 +38,42 @@ ul li a:hover {
     font-weight: 500;
 }
 
-.boton-cv{
+.boton-cv, .boton-card-live {
     background-image: var(--gradiente);
-    box-shadow: 0px 2px 8px var(--primary-color);
+    box-shadow: 0px 0px 4px var(--primary-color);
 }
 
 /* Proyectos */
 
-h2{
+/* #proyectos{
+    background: rgb(15,23,36);
+} */
+
+h2 {
     border-left: 5px solid var(--primary-color);
 }
 
-/* @media (max-width:px){
-    .img-presentacion{
-        width: 150px !important;
-    }
-} */
+.card {
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+
+    /* border-image: linear-gradient(90deg, rgba(143, 92, 224, 1) 0%, rgba(75, 153, 215, 1) 53%, rgba(0, 212, 255, 1) 100%) 1; */
+    /* background-origin: border-box; */
+    /* background-clip: content-box, border-box; */
+}
+
+.card-text{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.iconos-tech{
+    width: 30px;
+}
+
+.boton-card-repo:hover{
+    color: black !important;
+    background-color: white;
+}

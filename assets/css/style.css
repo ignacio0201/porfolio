@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #00D4FF ;
+    --secondary-color: #6f7889;
+    --background-color: #0f1724;
+    --gradiente: -webkit-linear-gradient(0deg, rgba(143,92,224,1) 0%, rgba(75,153,215,1) 53%, rgba(0,212,255,1) 100%);
+
+    --font-primary: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-primary);
+}
+
+/* Barra Navegacion */
+ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
+.boton-nav{
+    color: var(--primary-color)
+}
+
+/* Presentacion */
+.img-presentacion {
+    border: 5px solid white;
+    box-shadow: 0 0 200px var(--primary-color);
+}
+
+.titulo-gradiente {
+    background: var(--gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto-presentacion {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.boton-cv{
+    background-image: var(--gradiente);
+    box-shadow: 0px 2px 8px var(--primary-color);
+}
+
+/* Proyectos */
+
+h2{
+    border-left: 5px solid var(--primary-color);
+}
+
+/* @media (max-width:px){
+    .img-presentacion{
+        width: 150px !important;
+    }
+} */

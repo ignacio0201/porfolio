@@ -42,7 +42,7 @@ ul li a:hover {
     box-shadow: 0 0 200px var(--color-bluelight);
 }
 
-.titulo-gradiente {
+.titulo-gradiente, .navbar-brand {
     background: var(--gradiente);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

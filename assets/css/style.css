@@ -7,6 +7,8 @@
     --gradiente: -webkit-linear-gradient(0deg, rgba(143, 92, 224, 1) 0%, rgba(75, 153, 215, 1) 53%, rgba(0, 212, 255, 1) 100%);
 
     --font-primary: "Montserrat", sans-serif;
+
+    --border-radius: 20px;
 }
 
 body {
@@ -53,19 +55,24 @@ ul li a:hover {
     font-weight: 500;
 }
 
-.boton-cv, .boton-card-demo {
+.boton-cv, .boton-card-demo, .boton-form {
     background-image: var(--gradiente);
     box-shadow: 0px 2px 20px var(--color-soft-bluelight);
     transition: all 0.4s;
 }
 
-.boton-cv:hover, .boton-card-demo:hover{
+.boton-cv:hover, .boton-card-demo:hover, .boton-form:hover{
     box-shadow: 0px 2px 20px var(--color-bluelight);
 }
 
 /* Proyectos */
+#proyectos{
+    margin-bottom: 100px;
+}
+
 h2 {
     border-left: 5px solid var(--color-bluelight);
+    padding-left: 10px;
 }
 
 .card {
@@ -73,9 +80,8 @@ h2 {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
-    background-color: transparent;
     border: solid 1px;
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     border-color: var(--color-soft-white);
 
     /* border-image: linear-gradient(90deg, rgba(143, 92, 224, 1) 0%, rgba(75, 153, 215, 1) 53%, rgba(0, 212, 255, 1) 100%) 1; */
@@ -101,4 +107,35 @@ h2 {
 .boton-card-repo:hover{
     color: black !important;
     background-color: white;
+}
+
+/* Contacto */
+.contacto-envoltura{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.027), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 50px 80px;
+    border:1px solid var(--color-soft-white);
+    border-radius: var(--border-radius);
+    /* box-shadow: 0 0 100px 0 var(--color-soft-bluelight); */
+}
+
+.contacto-texto{
+    padding-right: 170px;
+}
+
+
+
+
+/* Celulares */
+@media (max-width:575px){
+    .contacto-envoltura{
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px){
+    .contacto-texto{
+        padding-right: 0;
+    }
 }

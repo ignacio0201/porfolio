@@ -60,6 +60,10 @@ ul li a:hover {
     box-shadow: 0px 2px 20px var(--color-soft-bluelight);
     transition: all 0.4s;
 }
+.boton-cv{
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .boton-cv:hover, .boton-card-demo:hover, .boton-form:hover{
     box-shadow: 0px 2px 20px var(--color-bluelight);
@@ -114,6 +118,10 @@ h2 {
     width: 10rem;
 }
 
+.icono-github{
+    filter: brightness(0) invert(1);
+}
+
 /* Contacto */
 .contacto-envoltura{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.027), rgba(255, 255, 255, 0));
@@ -130,15 +138,7 @@ h2 {
 }
 
 
-
 /* Breakpoints */
-
-/* 575px */
-@media (max-width:575px){
-    .contacto-envoltura{
-        padding: 15px;
-    }
-}
 
 /* 992px */
 
@@ -154,8 +154,16 @@ h2 {
     }
 }
 
+/* 768px */
 @media (max-width: 768px){
     .iconos-habilidades{
         width: 7rem;
+    }
+}
+
+/* 575px */
+@media (max-width:575px){
+    .contacto-envoltura{
+        padding: 15px;
     }
 }

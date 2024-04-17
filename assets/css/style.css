@@ -109,6 +109,11 @@ h2 {
     background-color: white;
 }
 
+/* Habilidades */
+.iconos-habilidades{
+    width: 10rem;
+}
+
 /* Contacto */
 .contacto-envoltura{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.027), rgba(255, 255, 255, 0));
@@ -146,5 +151,11 @@ h2 {
 @media (min-width: 993px){
     .parrafo-contacto{
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .iconos-habilidades{
+        width: 7rem;
     }
 }
